@@ -22,5 +22,10 @@
 
         public async Task<IEnumerable<Pupil>> GetAllPupils() => await Task.FromResult(_pupils);
         public async Task<Pupil> GetPupilById(int Id) => await Task.FromResult(_pupils.Single(p => p.Id == Id));
+        public async Task EventOccurred(Pupil pupil, string evt)
+        {
+            _pupils.Single(p => p.Id == pupil.Id).Name = $"{pupil.Name} evt: {evt}";
+            await Task.CompletedTask;
+        }
     }
 }

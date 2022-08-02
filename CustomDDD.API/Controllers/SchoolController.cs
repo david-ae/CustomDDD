@@ -1,4 +1,5 @@
 ﻿using CustomDDD.API.Commands;
+using CustomDDD.API.Notifications;
 using CustomDDD.API.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -11,8 +12,13 @@ namespace CustomDDD.API.Controllers
     public class SchoolController : ControllerBase
     {
         private readonly ISender _sender;
+        private readonly IPublisher _publisher;
 
-        public SchoolController(ISender sender) => _sender = sender;
+        public SchoolController(ISender sender, IPublisher publisher)
+        {
+            _sender = sender;
+            _publisher = publisher;
+        }
 
         [HttpGet]
         public async Task<ActionResult> GetPupils()
@@ -32,6 +38,7 @@ namespace CustomDDD.API.Controllers
         public async Task<ActionResult> AddPupil([FromBody] Pupil pupil)
         {
             var newPupilToReturn = await _sender.Send(new AddPupilCommand(pupil));
+            await _publisher.Publish(new PupilAddedNotifcation(newPupilToReturn));
             return CreatedAtRoute("GetPupilById", new { id = newPupilToReturn.Id }, newPupilToReturn);
         }
     }
