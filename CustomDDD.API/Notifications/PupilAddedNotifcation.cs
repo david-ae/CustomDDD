@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Domain;
+using MediatR;
 
 namespace CustomDDD.API.Notifications
 {

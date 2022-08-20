@@ -1,4 +1,6 @@
-﻿namespace CustomDDD.API
+﻿using Domain;
+
+namespace CustomDDD.API
 {
     public class FakePupilStore
     {

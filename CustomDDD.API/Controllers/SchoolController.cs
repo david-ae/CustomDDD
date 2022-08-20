@@ -1,6 +1,7 @@
 ﻿using CustomDDD.API.Commands;
 using CustomDDD.API.Notifications;
 using CustomDDD.API.Queries;
+using CustomDDD.Infrastructure.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -35,10 +36,9 @@ namespace CustomDDD.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddPupil([FromBody] Pupil pupil)
+        public async Task<ActionResult> AddPupil([FromBody] PupilDto pupil)
         {
             var newPupilToReturn = await _sender.Send(new AddPupilCommand(pupil));
-            await _publisher.Publish(new PupilAddedNotifcation(newPupilToReturn));
             return CreatedAtRoute("GetPupilById", new { id = newPupilToReturn.Id }, newPupilToReturn);
         }
     }

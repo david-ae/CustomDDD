@@ -1,6 +1,7 @@
-﻿using MediatR;
+﻿using CustomDDD.Infrastructure.Dtos;
+using MediatR;
 
 namespace CustomDDD.API.Commands
 {
-    public record AddPupilCommand(Pupil pupil) : IRequest<Pupil>;
+    public record AddPupilCommand(PupilDto pupil) : IRequest<PupilDto>;
 }
