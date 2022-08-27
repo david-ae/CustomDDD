@@ -1,11 +1,15 @@
-﻿namespace Domain
+﻿using CustomDDD.Domain.Primitives;
+
+namespace Domain
 {
-    public abstract class Person
+    public abstract class Person : Entity
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
-        public string Address { get; set; }
+        protected Person(Guid id) : base(id)
+        {
+        }
+        public string? Name { get; private set; }
+        public string? PhoneNumber { get; private set; }
+        public string? Email { get; private set; }
+        public string? Address { get; private set; }
     }
 }

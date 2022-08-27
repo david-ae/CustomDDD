@@ -8,6 +8,10 @@ namespace Domain
 {
     public class Teacher : Staff
     {
-        private IEnumerable<Pupil> pupils { get; set; }
+        public Teacher(Guid id) : base(id)
+        {
+        }
+
+        private IEnumerable<Pupil>? pupils { get; set; }
     }
 }

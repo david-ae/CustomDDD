@@ -7,7 +7,7 @@ namespace CustomDDD.Tests
         [Fact]
         public void Test1()
         {
-            Pupil pupil = new();
+            Pupil pupil = new(Guid.NewGuid());
             var result = pupil.AddNumber(1, 3);
             Assert.Equal(6, result);
         }

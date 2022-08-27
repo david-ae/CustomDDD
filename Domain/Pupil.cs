@@ -8,8 +8,12 @@ namespace Domain
 {
     public class Pupil : Person
     {
-        public IEnumerable<object> ClassHistory { get; set; }
-        public string CurrentClass { get; set; }
+        public Pupil(Guid id) : base(id)
+        {
+        }
+
+        public IEnumerable<object>? ClassHistory { get; private set; }
+        public string? CurrentClass { get; private set; }
         public int AddNumber(int number1, int number2)
         {
             return number1 + number2;

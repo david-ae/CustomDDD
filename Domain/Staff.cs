@@ -8,6 +8,10 @@ namespace Domain
 {
     public abstract class Staff : Person
     {
-        public string StaffNumber { get; set; }
+        protected Staff(Guid id) : base(id)
+        {
+        }
+
+        public string? StaffNumber { get; set; }
     }
 }

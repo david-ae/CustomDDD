@@ -9,7 +9,7 @@ namespace CustomDDD.API.Handlers
         public EmailHandler(FakePupilStore fakePupilStore) => _fakePupilStore = fakePupilStore;
         public async Task Handle(PupilAddedNotifcation notification, CancellationToken cancellationToken)
         {
-            await _fakePupilStore.EventOccurred(notification.pupil, "Email Sent");
+            // await _fakePupilStore.EventOccurred(notification.pupil, "Email Sent");
             await Task.CompletedTask;
         }
     }
