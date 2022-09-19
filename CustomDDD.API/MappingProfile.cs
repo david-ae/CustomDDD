@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using CustomDDD.Domain.Entities;
 using CustomDDD.Infrastructure.Dtos;
-using Domain;
 
-namespace CustomDDD.API
+namespace CustomDDD.Application
 {
     public class MappingProfile : Profile
     {

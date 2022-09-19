@@ -1,7 +1,7 @@
-﻿using CustomDDD.API.Notifications;
+﻿using CustomDDD.Application.Notifications;
 using MediatR;
 
-namespace CustomDDD.API.Handlers
+namespace CustomDDD.Application.Handlers
 {
     public class CacheInvalidationHandler : INotificationHandler<PupilAddedNotifcation>
     {

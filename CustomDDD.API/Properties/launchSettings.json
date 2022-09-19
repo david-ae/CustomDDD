@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "CustomDDD.API": {
+    "CustomDDD.Application": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

@@ -1,8 +1,8 @@
 ﻿using CustomDDD.Domain.Primitives;
 
-namespace Domain
+namespace CustomDDD.Domain.Abstractions
 {
-    public abstract class Person : Entity
+    public abstract class Person : AggregateRoot
     {
         protected Person(Guid id) : base(id)
         {

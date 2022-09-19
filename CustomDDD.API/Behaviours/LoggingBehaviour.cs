@@ -1,4 +1,4 @@
-﻿namespace CustomDDD.API.Behaviours
+﻿namespace CustomDDD.Application.Behaviours
 {
     public class LoggingBehaviour
     {

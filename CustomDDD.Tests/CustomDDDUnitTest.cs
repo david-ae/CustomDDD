@@ -1,4 +1,4 @@
-using Domain;
+using CustomDDD.Domain.Entities;
 
 namespace CustomDDD.Tests
 {

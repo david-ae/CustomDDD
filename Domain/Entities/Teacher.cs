@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CustomDDD.Domain.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace CustomDDD.Domain.Entities
 {
     public class Teacher : Staff
     {

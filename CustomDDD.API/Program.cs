@@ -1,4 +1,4 @@
-using CustomDDD.API;
+using CustomDDD.Application;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,7 +1,7 @@
-﻿using Domain;
+﻿using CustomDDD.Domain.Entities;
 using MediatR;
 
-namespace CustomDDD.API.Notifications
+namespace CustomDDD.Application.Notifications
 {
     public record PupilAddedNotifcation(Pupil pupil) : INotification;
 }

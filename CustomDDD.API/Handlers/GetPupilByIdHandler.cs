@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using CustomDDD.API.Queries;
+using CustomDDD.Application.Queries;
 using CustomDDD.Infrastructure.Dtos;
-using Domain;
+using CustomDDD.Domain;
 using MediatR;
 
-namespace CustomDDD.API.Handlers
+namespace CustomDDD.Application.Handlers
 {
     public class GetPupilByIdHandler : IRequestHandler<GetPupilByIdQuery, PupilDto>
     {

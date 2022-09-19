@@ -1,6 +1,6 @@
-﻿using Domain;
+﻿using CustomDDD.Domain.Entities;
 
-namespace CustomDDD.API
+namespace CustomDDD.Application
 {
     public class FakePupilStore
     {

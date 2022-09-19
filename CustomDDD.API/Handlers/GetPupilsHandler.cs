@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using CustomDDD.API.Queries;
+using CustomDDD.Application.Queries;
 using CustomDDD.Infrastructure.Dtos;
 using MediatR;
 
-namespace CustomDDD.API.Handlers
+namespace CustomDDD.Application.Handlers
 {
     public class GetPupilsHandler : IRequestHandler<GetPupilsQuery, IEnumerable<PupilDto>>
     {

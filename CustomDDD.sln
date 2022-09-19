@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDDD.API", "CustomDDD.API\CustomDDD.API.csproj", "{3C6BE552-D4DA-463F-B50B-ADFCA2458DA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomDDD.Application", "CustomDDD.API\CustomDDD.Application.csproj", "{3C6BE552-D4DA-463F-B50B-ADFCA2458DA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDDD.Domain", "Domain\CustomDDD.Domain.csproj", "{D7AF2231-58AA-4282-A81C-11C3417DF5BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomDDD.Domain", "Domain\CustomDDD.Domain.csproj", "{D7AF2231-58AA-4282-A81C-11C3417DF5BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDDD.Infrastructure", "CustomDDD.Infrastructure\CustomDDD.Infrastructure.csproj", "{763207CF-D167-484C-BD37-D1A6BDCDC73D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomDDD.Infrastructure", "CustomDDD.Infrastructure\CustomDDD.Infrastructure.csproj", "{763207CF-D167-484C-BD37-D1A6BDCDC73D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDDD.Tests", "CustomDDD.Tests\CustomDDD.Tests.csproj", "{2FB29017-336F-47E6-9376-6AA733E2D52A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomDDD.Tests", "CustomDDD.Tests\CustomDDD.Tests.csproj", "{2FB29017-336F-47E6-9376-6AA733E2D52A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CB9E1151-4306-42B2-B391-E73E59ADE909}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{58F447D0-A727-4D47-9EFE-EEF5D13A55FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDDD.Presentation", "CustomDDD.Presentation\CustomDDD.Presentation.csproj", "{F1E480A6-31D4-4246-B7B3-9CC8EF517F5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,19 @@ Global
 		{2FB29017-336F-47E6-9376-6AA733E2D52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FB29017-336F-47E6-9376-6AA733E2D52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FB29017-336F-47E6-9376-6AA733E2D52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E480A6-31D4-4246-B7B3-9CC8EF517F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E480A6-31D4-4246-B7B3-9CC8EF517F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E480A6-31D4-4246-B7B3-9CC8EF517F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E480A6-31D4-4246-B7B3-9CC8EF517F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C6BE552-D4DA-463F-B50B-ADFCA2458DA8} = {CB9E1151-4306-42B2-B391-E73E59ADE909}
+		{D7AF2231-58AA-4282-A81C-11C3417DF5BC} = {CB9E1151-4306-42B2-B391-E73E59ADE909}
+		{763207CF-D167-484C-BD37-D1A6BDCDC73D} = {58F447D0-A727-4D47-9EFE-EEF5D13A55FC}
+		{F1E480A6-31D4-4246-B7B3-9CC8EF517F5A} = {58F447D0-A727-4D47-9EFE-EEF5D13A55FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {353AB7B8-2C05-4C7D-80EE-BD607B3D5DC5}

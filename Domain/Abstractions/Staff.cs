@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace CustomDDD.Domain.Abstractions
 {
     public abstract class Staff : Person
     {

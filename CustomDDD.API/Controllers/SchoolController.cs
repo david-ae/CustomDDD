@@ -1,12 +1,12 @@
-﻿using CustomDDD.API.Commands;
-using CustomDDD.API.Notifications;
-using CustomDDD.API.Queries;
+﻿using CustomDDD.Application.Commands;
+using CustomDDD.Application.Notifications;
+using CustomDDD.Application.Queries;
 using CustomDDD.Infrastructure.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CustomDDD.API.Controllers
+namespace CustomDDD.Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
